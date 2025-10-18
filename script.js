@@ -7,7 +7,7 @@ class Person {
 }
 
 class Student extends Person {
-	constructor(name,age){
+	constructor(name){
 		this.name=name
 	}
 	study(){
@@ -16,7 +16,7 @@ class Student extends Person {
 }
 
 class Teacher extends Person {
-	constructor(name,age){
+	constructor(name){
 		this.name=name
 	}
 	teach(){
@@ -30,11 +30,11 @@ person.age = 30;  // Using the setter to change the age
 console.log(person.age);  // Output: 30
 
 // Creating a Student instance
-const student = new Student("Alice", 22);
+const student = new Student("John", 22);
 student.study();  // Output: Alice is studying
 
 // Creating a Teacher instance
-const teacher = new Teacher("Bob", 40);
+const teacher = new Teacher("John", 40);
 teacher.teach();  // Output: Bob is teaching
 
 // Do not change the code below this line
